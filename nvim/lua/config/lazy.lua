@@ -16,7 +16,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
-    -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import/override with your plugins
     { import = "plugins" },
@@ -58,12 +57,18 @@ require("norminette").setup({
 	active = true,
 })
 
-require("neovim/nvim-lspconfig").setup({
-opts = {
-      servers = {
-        pyright = {
-          mason = false,
+require("telescope").setup {
+    defaults = {
+        file_ignore_patterns = {
+            "node_modules/.*",
+            ".git/.*",
+			"*.o"
         }
-      }
+    },
+	pickers = {
+    find_files = {
+		find_command={"find",".","-type","f","-name","*.c", "-o", "-name","*.h", "-o", "-name","Makefile",  "-o", "-name",".lua",}
+      -- find_command = { "rg", "--files", "--color", "never", "--no-require-git" }
     }
-})
+  }
+}
