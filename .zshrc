@@ -1,6 +1,3 @@
-plugins=(git)
-
-#source $ZSH/oh-my-zsh.sh
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -18,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -52,7 +49,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
-
+#
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
@@ -80,7 +77,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
 
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -110,29 +109,28 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PATH=$PATH:"$HOME/Appimage"
+export PATH=$PATH:"$HOME/.local/bin"
 
 alias ccf="cc -Wextra -Werror -Wall"
 alias gg="ccf main.c && ./a.out"
 alias v="nvim"
-#alias vim="nvim"
+alias vim="nvim"
 
 alias ga="git add -A"
 alias gm="git commit -m'auto'"
 alias gp="git push"
 alias g="ga && gm && gp"
 
+alias s="source $HOME/.zshrc"
+alias t="make test"
 
+alias francinette=/mnt/nfs/homes/ale-tell/francinette/tester.sh
 
-
-export PATH="$PATH:/opt/nvim-linux64/bin"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
-alias francinette=/mnt/nfs/homes/francinette/tester.sh
-
-alias paco=/home/antoine/ale-tell/tester.sh
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
+alias paco=/mnt/nfs/homes/ale-tell/francinette/tester.sh
