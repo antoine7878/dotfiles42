@@ -1,0 +1,7 @@
+# This is Git's per-user configuration file.
+[user]
+	name = ale-tell
+	email = antoine.letellier90@gmail.com
+# Please adapt and uncomment the following lines:
+#	name = Antoine Le Tellier
+#	email = ale-tell@bess-f2r3s9.clusters.42paris.fr
