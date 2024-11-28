@@ -130,6 +130,8 @@ alias g="ga && gm && gp"
 
 alias s="source $HOME/.zshrc"
 alias t="make test"
+alias m="make"
+alias re="make re"
 
 alias francinette=/mnt/nfs/homes/ale-tell/francinette/tester.sh
 
