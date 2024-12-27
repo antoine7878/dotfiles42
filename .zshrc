@@ -128,11 +128,15 @@ alias gm="git commit -m'auto'"
 alias gp="git push"
 alias g="ga && gm && gp"
 
+alias bash="bash --posix"
 alias s="source $HOME/.zshrc"
 alias t="make test"
+alias vt="make vtest"
+alias fd="make fdtest"
 alias m="make"
 alias re="make re"
 
 alias francinette=/mnt/nfs/homes/ale-tell/francinette/tester.sh
 
 alias paco=/mnt/nfs/homes/ale-tell/francinette/tester.sh
+export PATH=/mnt/nfs/homes/ale-tell/.local/funcheck/host:$PATH
