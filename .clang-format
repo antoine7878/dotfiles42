@@ -1,0 +1,13 @@
+# IndentWidth: 4
+BasedOnStyle: Microsoft
+
+SeparateDefinitionBlocks: Always
+# AlignConsecutiveBitFields: AcrossEmptyLinesAndComments
+#
+# AlignConsecutiveBitFields:
+#   Enabled: true
+#   AcrossEmptyLines: true
+#   AcrossComments: false
+#
+# Language: c
+# DisableFormat: true

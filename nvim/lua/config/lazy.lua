@@ -52,27 +52,44 @@ require("lazy").setup({
 })
 
 require("norminette").setup({
-	runOnSave = true,
-	maxErrorsToShow = 15,
-	active = true,
+  runOnSave = true,
+  maxErrorsToShow = 15,
+  active = true,
 })
 
-require("telescope").setup {
-    defaults = {
-        file_ignore_patterns = {
-            "node_modules/.*",
-            ".git/.*",
-			"*.o"
-        }
+require("telescope").setup({
+  defaults = {
+    file_ignore_patterns = {
+      "node_modules/.*",
+      ".git/.*",
+      "*.o",
     },
-	pickers = {
+  },
+  pickers = {
     find_files = {
-		find_command={"find",".","-type","f","-name","*.c", "-o", "-name","*.h", "-o", "-name","Makefile",  "-o", "-name",".lua",}
+      find_command = {
+        "find",
+        ".",
+        "-type",
+        "f",
+        "-name",
+        "*.cpp",
+        "-o",
+        "-name",
+        "*.hpp",
+        "-o",
+        "-name",
+        "Makefile",
+        "-o",
+        "-name",
+        ".lua",
+      },
       -- find_command = { "rg", "--files", "--color", "never", "--no-require-git" }
-    }
-  }
-}
-require('onedark').setup {
-    style = 'deep'
-}
-require('onedark').load()
+    },
+  },
+})
+
+require("onedark").setup({
+  style = "deep",
+})
+require("onedark").load()

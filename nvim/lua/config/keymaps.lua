@@ -3,5 +3,10 @@
 -- Add any additional keymaps here
 --
 local a = vim.api
+local map = vim.keymap.set
 
 a.nvim_set_keymap('n', '<leader>r', ':!make test<CR>', { noremap = true, silent = true })
+
+map({ "n", "v" }, "<F3>", function()
+  LazyVim.format({ force = true })
+end, { desc = "Format" })
