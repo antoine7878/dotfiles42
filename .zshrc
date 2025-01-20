@@ -117,6 +117,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 export PATH=$PATH:"$HOME/Appimage"
 export PATH=$PATH:"$HOME/.local/bin"
+export PATH=$PATH:"$HOME/42/MyClass/"
+export PATH=/mnt/nfs/homes/ale-tell/.local/funcheck/host:$PATH
 
 alias ccf="cc -Wextra -Werror -Wall"
 alias gg="ccf main.c && ./a.out"
@@ -135,8 +137,9 @@ alias vt="make vtest"
 alias fd="make fdtest"
 alias m="make"
 alias re="make re"
+alias re="make re"
+
+alias b="bear -- make re"
 
 alias francinette=/mnt/nfs/homes/ale-tell/francinette/tester.sh
 
-alias paco=/mnt/nfs/homes/ale-tell/francinette/tester.sh
-export PATH=/mnt/nfs/homes/ale-tell/.local/funcheck/host:$PATH

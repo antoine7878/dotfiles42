@@ -1,12 +1,10 @@
 return {
-	{ "navarasu/onedark.nvim",
-		opts = { style = 'deep' }
-	},
-
-	{
-		"LazyVim/LazyVim",
-		opts = {
-			colorscheme = "onedark",
-		},
-	},
+  { "navarasu/onedark.nvim",style = 'darker', priority =1000 },
+	
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "onedark",
+    },
+  },
 }
