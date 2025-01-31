@@ -118,7 +118,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 export PATH=$PATH:"$HOME/Appimage"
 export PATH=$PATH:"$HOME/.local/bin"
 export PATH=$PATH:"$HOME/42/MyClass/"
-export PATH=/mnt/nfs/homes/ale-tell/.local/funcheck/host:$PATH
+# export PATH=/mnt/nfs/homes/ale-tell/.local/funcheck/host:$PATH
 
 alias ccf="cc -Wextra -Werror -Wall"
 alias gg="ccf main.c && ./a.out"
