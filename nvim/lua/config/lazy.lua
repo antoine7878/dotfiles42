@@ -51,12 +51,6 @@ require("lazy").setup({
   },
 })
 
-require("norminette").setup({
-  runOnSave = true,
-  maxErrorsToShow = 15,
-  active = true,
-})
-
 require("telescope").setup({
   defaults = {
     file_ignore_patterns = {

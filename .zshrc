@@ -127,8 +127,7 @@ alias vim="nvim"
 
 alias ga="git add -A"
 alias gm="git commit -m'auto'"
-alias gp="git push"
-alias g="ga && gm && gp"
+# alias g="ga && gm && gp"
 
 alias bash="bash --posix"
 alias s="source $HOME/.zshrc"
@@ -137,9 +136,11 @@ alias vt="make vtest"
 alias fd="make fdtest"
 alias m="make"
 alias re="make re"
-alias re="make re"
+alias rre="make rre"
 
+alias g='function _gpk() { gaa . && gcmsg "$1" && gp; }; _gpk'
 alias b="bear -- make re"
 
 alias francinette=/mnt/nfs/homes/ale-tell/francinette/tester.sh
 
+export PATH=/home/ale-tell/.local/funcheck/host:$PATH
