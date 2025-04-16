@@ -140,7 +140,9 @@ alias rre="make rre"
 
 alias g='function _gpk() { gaa . && gcmsg "$1" && gp; }; _gpk'
 alias b="bear -- make re"
+alias grep="grep -r -n --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox,.venv,venv}"
 
 alias francinette=/mnt/nfs/homes/ale-tell/francinette/tester.sh
 
 export PATH=/home/ale-tell/.local/funcheck/host:$PATH
+export PATH=$HOME/.brew/bin:$PATH

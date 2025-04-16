@@ -10,3 +10,6 @@ vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 vim.opt.relativenumber = true
 
 vim.g.autoformat = false
+
+vim.g.lazyvim_check_order = false
+

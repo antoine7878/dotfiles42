@@ -1,4 +1,5 @@
 # IndentWidth: 4
+Standard: Cpp03
 BasedOnStyle: Microsoft
 AlignConsecutiveDeclarations: true
 SeparateDefinitionBlocks: Always
