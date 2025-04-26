@@ -118,16 +118,10 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 export PATH=$PATH:"$HOME/Appimage"
 export PATH=$PATH:"$HOME/.local/bin"
 export PATH=$PATH:"$HOME/42/MyClass/"
-# export PATH=/mnt/nfs/homes/ale-tell/.local/funcheck/host:$PATH
 
-alias ccf="cc -Wextra -Werror -Wall"
-alias gg="ccf main.c && ./a.out"
-alias v="nvim"
 alias vim="nvim"
 
 alias ga="git add -A"
-alias gm="git commit -m'auto'"
-# alias g="ga && gm && gp"
 
 alias bash="bash --posix"
 alias s="source $HOME/.zshrc"
@@ -138,11 +132,12 @@ alias m="make"
 alias re="make re"
 alias rre="make rre"
 
+alias v="source venv"
+
 alias g='function _gpk() { gaa . && gcmsg "$1" && gp; }; _gpk'
 alias b="bear -- make re"
 alias grep="grep -r -n --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox,.venv,venv}"
 
 alias francinette=/mnt/nfs/homes/ale-tell/francinette/tester.sh
 
-export PATH=/home/ale-tell/.local/funcheck/host:$PATH
 export PATH=$HOME/.brew/bin:$PATH
